@@ -15,6 +15,8 @@
 
   <ion-button (click)="getCurrentPosition()">Get Current Location</ion-button>
 
+  <ion-button (click)="openWebPage()">Open Ionic Website</ion-button>
+
   <div *ngIf="currentCoordinates">
     <p>Latitude: {{ currentCoordinates.latitude }}</p>
     <p>Longitude: {{ currentCoordinates.longitude }}</p>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Geolocation } from '@capacitor/geolocation';
+import { Browser } from '@capacitor/browser';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,11 @@ export class HomePage {
       console.error('Error getting location', error);
     }
   }
+
+  async openWebPage() {
+    await Browser.open({ url: 'https://ionicframework.com' });
+  }
+  
  
 
 }
